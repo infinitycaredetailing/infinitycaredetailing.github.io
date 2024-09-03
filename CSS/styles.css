@@ -1,0 +1,555 @@
+*{margin: 0 auto;
+padding: 0;
+font-family:sans-serif;
+box-sizing: border-box;
+user-select: none;}
+
+body{margin: 0 auto;
+background-color: black;}
+
+/* Inicio nav */
+
+nav{padding: 0px;
+height: 80px;
+background-color: black;
+color: white;
+display: flex;
+align-items:center;
+justify-content: space-between;
+position: fixed;
+z-index: 1;
+width: 100%;}
+
+.logo{width: 160px;
+height: 170px;}
+
+.nav_links{position: fixed;
+left: 0;
+bottom: 0;
+top: 79px;
+right: 0;
+background-color: black;
+display: grid;
+place-items:center;
+clip-path: circle(0% at top right);
+transition:ease-out clip-path 1s;}
+
+.nav_item{text-decoration: none;
+color: white;
+font-family: 'Edu AU VIC WA NT Hand';
+font-style: normal;
+font-weight: 400 700;
+font-display: swap;
+font-size: 24px;}
+
+.nav_item:hover{border-bottom: 3px solid #ab9658;
+scale: 80%;}
+
+
+.nav_links:target{clip-path: circle(150% at top right);}
+
+@media (max-width:768px){
+
+.nav{width: 100%;
+height: 60px;}
+
+.nav a img {width: 40px;
+height: 40px;}
+
+.logo{width: 120px;
+  height: 120px;}
+
+.nav_links{left:0;
+right:0px;
+top: 60px;
+height: 100%;
+}
+}
+
+
+/*inicio header */
+
+header{width: 100%;
+height: auto;
+position: relative;
+overflow: hidden;}
+
+video{width: 100%;
+    height: 100%;}
+
+.absolute{width: 100%;
+height: 100%;
+top: 0;
+right: 0;
+position: absolute;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+h1{font-size: 60px;
+color: white;
+font-weight: 30;
+margin-bottom: 30px;
+padding-top: 110px;
+text-shadow: 3px 2px rgba(0, 0, 0, 0.437);
+font-family:'Edu AU VIC WA NT Hand' ;}
+
+h1::after{display: block;
+width: 35%;
+height: 4px;
+content: "";
+background-color:#ab9658 ;}
+
+.overlay{width: 100%;
+height: 100%;
+position: absolute;
+background: rgba(0, 0, 0, 0.535);}
+
+@media (max-width:768px){
+  header{height: 360px;
+  width: 100%;}
+
+
+    header .absolute h1{font-size: 20px;}
+
+} 
+/* Fin header */
+
+
+/* inicio Section acerca */
+#acerca{width: 100%;
+height:500px;
+box-sizing: border-box;
+background-color: black;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+.container{width: 100%;
+height: 400px;;
+display:flex;
+justify-content: space-between;
+align-items: center;}
+
+.a_info{width: 35%;
+height:60%;
+background-color:#ab96584a;
+border: 1px solid silver;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+color: white;
+font-size: 15px;
+box-sizing: border-box;}
+
+.a_info p{font-family:'Edu AU VIC WA NT Hand';
+font-weight: 20;}
+
+.a_info h2{
+    font-family: 'Edu AU VIC WA NT Hand';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    font-size: 24px;}
+
+.fa-solid,.fa-crow{color: gold;
+font-size: 34px;}
+
+@keyframes show {
+
+  from {
+  opacity:1;
+  scale: 25%;}
+  
+  to {opacity: 1;
+    scale: 100%;
+    margin: 0 auto;;
+  }
+  
+  } 
+  
+  .a_info,.serviplan{
+  margin: o auto;
+  view-timeline-name: --image;
+  view-timeline-axis:block;
+  
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% to 50%;
+  animation-fill-mode: both;
+  }
+
+@media (max-width:768px){
+.container{display: block;
+justify-content: center;
+align-items: center;}
+
+.a_info{width: 90%;
+height: 70%;
+font-size: 16px;}
+
+#acerca {height: 600px;}
+}
+
+
+/* fin acerca responsive */
+
+/* inicio section car show */
+#car_show{background-color: black;
+width: 100%;
+height: 500px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;}
+
+.mensaje h2{ font-family:'Edu AU VIC WA NT Hand'
+;font-size: 24px;
+font-weight: 100;
+color: white;}
+
+.mercedez img{height: 450px;
+width: 360px;
+border-radius: 10px;
+padding: 5px;}
+
+@media (max-width:768px){
+#car_show{height: 750px;}
+
+.mensaje h2{font-size: 22px;
+padding: 5px;
+margin-top: 65px;}
+
+.mercedez{display: flex;
+flex-direction:column;}
+
+.mercedez img{width: 260px;
+height:300px;}
+}
+/* fin Car show */
+
+/* inicio mensaje */
+#mensaje{height: 150px;
+width: 100%;
+background-color:black;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+#mensaje h2{color: white;
+  font-family:'Edu AU VIC WA NT Hand';
+  font-size: 24px;
+  font-weight: 100;}
+
+  @media (max-width:768px){
+    .mensaje h2{font-size: 20px;}
+
+    #mensaje h2{font-size: 20px;}
+
+    #tapiz .mensaje2 h2{font-size: 20px;}
+
+    
+  
+}
+
+/*fin inicio mensaje*/
+
+/* img_fija inicio */
+#img_fija{width: 100%;
+height: 150px;
+background-image:url(/IMG/suzuki.jpg);
+background-size:cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+border: 1px solid #ab9658;}
+
+@media (max-width:768px){
+#img_fija{background-image: url(/IMG/yo.jpg);}
+}
+/* img_fija end */
+
+/* inicio tapiz */
+
+#tapiz{width: 100%;
+height: 600px;
+background-color: black;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;}
+
+.mensaje2 h2{color: white;
+  font-family:'Edu AU VIC WA NT Hand';
+  font-size: 24px;
+  font-weight: 100;}
+
+.img_tapiz img{width: 360px;
+height: 450px;
+border-radius: 10px;
+padding: 5px;} 
+
+@media (max-width:768px){
+
+  #tapiz{height:750px;}
+
+  .img_tapiz img{height: 320px;
+  display: flex;
+justify-content: center;
+align-items: center;}
+
+.mensaje2 h2{font-size: 21px;}
+}
+/* fin section tapiz */
+
+/* inicio Section motor */
+#motor{width: 100%;
+height: 500px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: black;}
+
+.mensaje_2 h2{color: white;
+  font-family:'Edu AU VIC WA NT Hand';
+  font-size: 24px;
+  font-weight: 100;}
+
+.img_motor img{width: 360px;
+height: 450px;
+border-radius: 10px;
+padding: 5px;
+animation-name: trans}
+
+@media (max-width:768px) {
+
+  #motor{height: 810px;}
+
+  .img_motor{display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;}
+  
+  .img_motor img{height: 360px;}
+
+  .mensaje_2 h2{font-size: 21px;}
+}
+/* Fin seccion motor */
+
+/* section Servicios */
+
+#servicios{width: 100%;
+height:850px;
+background-color: black;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;}
+
+#servicios span{color: white;
+font-family:'Edu AU VIC WA NT Hand';
+font-size: 20px;}
+
+.servi_co{width: 90%;
+height: 600px;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+.serviplan{width: 100%;
+height:458px;
+background-color: #ab9658;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items:center;
+flex-direction: column;
+box-sizing: content-box;
+border: 2px solid silver;}
+
+
+
+.serviplan ul li{font-family:'Edu AU VIC WA NT Hand'
+  ;font-size: 18px;
+  font-weight: 40;
+  color: white;
+list-style-position: inside;}
+
+  .serviplan p{font-family: sans-serif;
+  font-weight: 900;}
+
+.serviplan .car_tru{width: 50%;  
+display: flex;
+justify-content: space-around;
+text-align: center;}
+
+
+@media (max-width:768px){
+#servicios{height: 1350px;}
+
+#servicios span{font-size: 13px;
+padding: 5px;}
+
+#servicios h1{font-size: 48px;
+margin-bottom: 100px;}
+
+.serviplan{width:90%;}  
+  
+  
+.servi_co{display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height:1000px;}
+}
+/* fin servicios */
+
+/* inicio catalago */
+
+#catalago{width: 100%;
+height: 315px;
+background-image: url(/IMG/bmw.jpg);
+background-attachment: fixed;
+background-size: cover;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border: 1px solid #ab9658;}
+
+.btn_cat button{padding: 10px;
+border: 2px solid black;
+width: 150px;
+height: 52px;
+border-radius: 6px;
+background-color:#ab9658;
+box-shadow: 2px 2px black;}
+
+.btn_cat button:hover{background-color:black;
+border: 4px solid #ab9658;}
+
+
+.btn_cat button a{text-decoration: none;
+font-family:'Edu AU VIC WA NT Hand';
+font-size: 22px;
+font-weight: 800;
+color:white;}
+
+@media (max-width:768px){
+  .men_cat h1{font-size: 38px;
+  margin-top: -70px;}
+
+  #catalago{background-image: url(/IMG/pexels-kampratt-3457780.jpg);
+  background-size: cover;}
+}
+/* fin catalago */
+
+/* contacto */
+#contacto{width: 100%;
+height: 700px;
+background-color:black;
+display:flex;
+flex-direction:column;
+justify-content: center;
+align-items: center;}
+
+.men_1{width: 60%;
+height: 300px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;}
+
+.red_so{width:100%;
+height: 100px;
+display: flex;
+justify-content: space-around;
+align-items: center;}
+
+.red_so a{text-decoration: none;
+color: white;
+font-size: 25px;
+padding: 5px;
+padding-bottom: 8px;}
+
+.red_so p{color: white;
+font-size: 22px;}
+
+.red_so a i{font-size: 45px;}
+
+.img_co img{width: 280px;
+height: 340px;
+border-radius: 5px;}
+
+@media (max-width:768px){
+
+  #contacto{height: 845px;}
+
+  .red_so{display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 50px;
+margin-bottom: 30px;}
+
+.img_co{width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+.img_co img {width:360px;
+height:370px;}
+   
+.red_so a{font-size: 19px;}
+
+  .men_1 h1{font-size: 38px;}
+}
+/* FIN CONTACTO */
+
+/* footer */
+#foo_red{width: 100%;
+height:70px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color: black;
+border-top:2px solid #ab9658;}
+
+#foo_red p{color: #ab9658;}
+
+#foo_red .red_social i{font-size: 20px;
+padding: 10px;}
+
+#copy{width: 100%;
+height: 90px;
+margin-top: -20px;
+background-color: black;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;}
+
+#copy p {color: white;
+font-size: 14px;}
+
+#copy img{height: 140px;
+width: 100px;}
+
+@media (max-width:768px){
+  #foo_red{height: 120px;}
+
+  #foo_red .red_social{display: flex;
+  justify-content: center;
+align-items: center;}
+
+#copy{height: 40px;}
+
+#copy p{font-size: 13px;}
+
+
+
+
+}
+
