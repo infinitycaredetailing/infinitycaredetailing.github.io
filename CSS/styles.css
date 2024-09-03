@@ -116,6 +116,20 @@ background: rgba(0, 0, 0, 0.535);}
 } 
 /* Fin header */
 
+.btn-wsp{position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 5px;
+  background-color: green;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px  #ab9658 ;
+  z-index: 100;}
+
 
 /* inicio Section acerca */
 #acerca{width: 100%;
